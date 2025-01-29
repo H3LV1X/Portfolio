@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form method="post" >
+            <!-- Поле для имени -->
+            <input type="text" name="name" class="form-control" placeholder="Name" autocomplete="off" required>
+
+            <!-- Поле для email -->
+            <input type="email" name="email" class="form-control" placeholder="Email Address" autocomplete="off" required>
+
+            <!-- Поле для пароля -->
+            <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off" required>
+
+            <!-- Кнопка отправки -->
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <a href="{{ url_for('login') }}" class="form-link">Already have an account? Log in here.</a>
+    </div>
+</body>
+</html>

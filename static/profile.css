@@ -1,0 +1,201 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Контейнер профиля */
+.profile-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стиль фото профиля */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #00aaff;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc; /* Серый фон для пустого фото */
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.no-photo {
+    line-height: 1.2;
+    padding: 10px;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00aaff;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #00aaff;
+}
+
+/* Кнопка выхода */
+a.logout-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+a.logout-button:hover {
+    background-color: #0056b3;
+}
+
+/* Форма загрузки */
+.upload-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Скрываем стандартное поле ввода файла */
+.file-input {
+    display: none;
+}
+
+/* Кастомная кнопка "Выберите файл" */
+.custom-file-label {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.custom-file-label:hover {
+    background-color: #0056b3;
+}
+
+/* Кнопка загрузки */
+.upload-button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #0086cc;
+}
+
+/* Блок погоды */
+.weather-info {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #222;
+    color: #00aaff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #00aaff;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+        .weather-info:hover {
+            background-color: #00aaff;
+            color: #fff;
+        }
+
+
+/* Форма ввода города */
+.city-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Метка для поля ввода */
+.city-label {
+    font-size: 1.2rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+/* Поле ввода */
+.city-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    background-color: black ;
+    color: #fff;
+    margin-bottom: 10px;
+    outline: none; /* Убирает стандартное выделение */
+    transition: none; /* Отключает анимации */
+}
+
+/* Убираем изменение стиля при фокусе */
+.city-input:focus {
+    border-color: #00aaff; /* Оставляем прежний цвет рамки */
+    background-color: black; /* Оставляем прежний цвет фона */
+    color: #fff; /* Оставляем прежний цвет текста */
+}
+
+/* Кнопка отправки */
+.city-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.city-button:hover {
+    background-color: #0056b3;
+
+}

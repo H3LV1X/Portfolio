@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Форма логина -->
+    <div class="form-container">
+        <h1>Login</h1>
+        <form method="post">
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+            <button type="submit" class="btn">Sign in</button>
+        </form>
+        <a href="{{ url_for('signup') }}" class="form-link">Don't have an account? Sign up here.</a>
+    </div>
+
+    <!-- Flash message data -->
+    <div id="flash-data" data-flash="{{ get_flashed_messages(with_categories=true) | tojson }}"></div>
+
+    <!-- Модальное окно -->
+    <div id="error-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modal-message">Введите логин или пароль </p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='error.js') }}"></script>
+</body>
+</html>
